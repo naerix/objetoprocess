@@ -1,0 +1,33 @@
+<html lang='es'>
+  <head>
+    {{>head}}
+  </head>
+  <body>
+    <div class="alert alert-primary" role="alert" style="">
+    Bienvenid@, {{{username}}}!!!!!
+    <button type="button" class="btn btn-secondary btn-sm justify-content-md-end" href="http://localhost:8080/logout" onclick="logout()" id= "logout">Logout</button>
+</div>
+    <div class="title">
+      {{{title}}}
+    </div>
+    <br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+
+      {{>chat}}
+    </div>
+    <div class="col-sm">
+      <h1>Subir productos</h1>
+      {{> form}}
+      <h1>PRODUCTOS</h1>
+      {{>products}}
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.2/dist/normalizr.browser.min.js"></script>
+  <script src="../index.js"></script>
+  </body>
+   {{> footer}}
+</html>
